@@ -1,0 +1,59 @@
+
+	package Inheritance;
+
+	import java.util.Scanner;
+
+	public class CustomerUsingScannerEx1 {
+
+	    String cname;
+	    int age;
+
+	    void getCustomerDetails(Scanner sc) {
+
+	        System.out.println("Enter Customer Name: ");
+	        cname = sc.nextLine();
+
+	        System.out.println("Enter Customer Age: ");
+	        age = sc.nextInt();
+	    }
+
+	    void displayCustomerDetails() {
+
+	        System.out.println("\nCustomer Name : " + cname);
+	        System.out.println("Customer Age  : " + age);
+	    }
+	}
+
+	class Services extends CustomerUsingScannerEx1 {
+
+	    int serviceCharges;
+
+	    void getServiceDetails(Scanner sc) {
+
+	        System.out.println("Enter Service Charges: ");
+	        serviceCharges = sc.nextInt();
+	    }
+
+	    void displayServiceDetails() {
+
+	        System.out.println("Service Charges : " + serviceCharges);
+	    }
+	}
+
+	class CustomerMain {
+
+	    public static void main(String[] args) {
+
+	        Scanner sc = new Scanner(System.in);
+
+	        Services s = new Services();
+
+	        s.getCustomerDetails(sc);
+	        s.getServiceDetails(sc);
+
+	        s.displayCustomerDetails();
+	        s.displayServiceDetails();
+
+	        sc.close();
+	    }
+	}
