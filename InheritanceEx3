@@ -1,0 +1,32 @@
+package Inheritance;
+
+public class Employee {
+	String ename="Harshad";
+	int salary=450584;
+	String company="Infosys";
+	Boolean mnc=true;
+	
+	void work() {
+		System.out.println("the employees are working in infosys");
+	}
+	
+}
+ class Manager extends Employee {
+	 String mname="Vikas";
+	 
+	 void manage() {
+		 System.out.println("The manager manages the team");
+	 }
+	 
+ }
+	
+	class DemoMain{
+	public static void main(String[] args) {
+		Manager m=new Manager();
+		m.work();
+		m.manage();
+		System.out.println("Infosys is a good organization and have great work culture");
+
+	}
+
+}
