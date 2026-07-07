@@ -1,0 +1,56 @@
+package Inheritance;
+
+public class Animal {
+ String color="Brown";
+ void eat() {
+	 System.out.println("Animal is eating");
+ }
+	
+}
+class Dog extends Animal {
+	 boolean pet=true;
+void bark() {
+	System.out.println("Dog is barking");
+ }
+}
+
+ class Demo {
+	public static void main(String[] args) {
+		Dog d=new Dog();
+		
+		System.out.println("the color of the dog is:" + d.color);
+		System.out.println("Is it a pet? " + d.pet);
+		d.bark();
+		d.eat();
+
+	}
+}
+
+package Inheritance;
+
+public class Animal {
+ String color="Brown";
+ void eat() {
+	 System.out.println("Animal is eating");
+ }
+	
+}
+class Dog extends Animal {
+	 boolean pet=true;
+void bark() {
+	System.out.println("Dog is barking");
+ }
+}
+
+ class Demo {
+	public static void main(String[] args) {
+		Dog d=new Dog();
+		
+		System.out.println("the color of the dog is:" + d.color);
+		System.out.println("Is it a pet? " + d.pet);
+		d.bark();
+		d.eat();
+
+	}
+}
+
